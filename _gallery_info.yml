@@ -14,3 +14,5 @@ tags:
     - dask
     - cartopy
     - scikit-learn
+  events:
+    - Cook-off 2026
