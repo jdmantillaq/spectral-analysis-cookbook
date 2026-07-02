@@ -2,18 +2,14 @@
 
 <img src="thumbnails/spectral_analysis.png" alt="thumbnail" width="300"/>
 
-[![nightly-build](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/spectral-analysis-cookbook/main?labpath=notebooks)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21139295.svg)](https://doi.org/10.5281/zenodo.21139294)
+[![nightly-build](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml) [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/spectral-analysis-cookbook/main?labpath=notebooks) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21139295.svg)](https://doi.org/10.5281/zenodo.21139295)
 
 
-This Project Pythia Cookbook covers **spectral analysis methods for geophysical data in Python**, with a focus on Fourier and harmonic analysis, spectral filtering, and Empirical Orthogonal Function (EOF) analysis. The notebooks build foundational skills for analyzing climate time series and gridded datasets, then apply these techniques to real atmospheric observations. Applications include frequency decomposition, **Extended EOF (EEOF)** analysis, and r**egression of atmospheric fields onto diagnostic indices**.
+This Project Pythia Cookbook teaches **spectral analysis of geophysical data in Python**: Fourier and harmonic analysis, spectral filtering, EOF/PCA, **Extended EOF (EEOF)** analysis, and **regression onto diagnostic indices**.
 
 ## Motivation
 
-Many important climate signals, from the seasonal cycle to the interannual and long term variability, are best understood in **frequency space**. This cookbook teaches you how to move from raw geophysical time series to meaningful diagnostics: removing the annual cycle with harmonic regression, designing and applying spectral filters, interpreting power spectra and extracting dominant patterns with EOF/PCA.
-
-By the end, you will be able to preprocess climate data for variability studies, decompose fields by frequency band, and carry out EOF analyses on datasets—including **time-extended EOFs** and **multivariable EOFs**.
+Climate signals from the seasonal cycle to interannual variability are best understood in **frequency space**. These notebooks walk from raw time series to practical diagnostics, harmonic regression, spectral filters, power spectra, and EOF-based pattern extraction, including **time-extended** and **multivariable EOFs**.
 
 ## Authors
 
