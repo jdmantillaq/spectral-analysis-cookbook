@@ -2,17 +2,14 @@
 
 <img src="thumbnails/spectral_analysis.png" alt="thumbnail" width="300"/>
 
-[![nightly-build](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml)
-[![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/spectral-analysis-cookbook/main?labpath=notebooks)
-[![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
+[![nightly-build](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml/badge.svg)](https://github.com/ProjectPythia/spectral-analysis-cookbook/actions/workflows/nightly-build.yaml) [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/spectral-analysis-cookbook/main?labpath=notebooks) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21139295.svg)](https://doi.org/10.5281/zenodo.21139295)
 
-This Project Pythia Cookbook covers **spectral analysis methods for geophysical data in Python**, with a focus on Fourier and harmonic analysis, spectral filtering, and Empirical Orthogonal Function (EOF) analysis. The notebooks build foundational skills for analyzing climate time series and gridded datasets, then apply these techniques to real atmospheric observations. Applications include **frequency decomposition** of wind fields, **time-extended EOF (EEOF)** analysis of outgoing longwave radiation (OLR), and **regression of atmospheric fields onto the Real-time Multivariate MJO (RMM) indices** to diagnose the large-scale circulation patterns associated with the Madden–Julian Oscillation (MJO).
+
+This Project Pythia Cookbook teaches **spectral analysis of geophysical data in Python**: Fourier and harmonic analysis, spectral filtering, EOF/PCA, **Extended EOF (EEOF)** analysis, and **regression onto diagnostic indices**.
 
 ## Motivation
 
-Many important climate signals, from the seasonal cycle to the interannual and long term variability, are best understood in **frequency space**. This cookbook teaches you how to move from raw geophysical time series to meaningful diagnostics: removing the annual cycle with harmonic regression, designing and applying spectral filters, interpreting power spectra (including artifacts like the Gibbs phenomenon), and extracting dominant patterns with EOF/PCA.
-
-By the end, you will be able to preprocess climate data for variability studies, decompose fields by frequency band, and carry out EOF analyses on 2D and 3D datasets—including extended (lag-augmented) EOFs useful for propagating signals. These skills form a practical foundation for reproducing standard indices such as the Real-time Multivariate MJO (RMM) index of @wheeler2004all.
+Climate signals from the seasonal cycle to interannual variability are best understood in **frequency space**. These notebooks walk from raw time series to practical diagnostics, harmonic regression, spectral filters, power spectra, and EOF-based pattern extraction, including **time-extended** and **multivariable EOFs**.
 
 ## Authors
 
@@ -28,24 +25,25 @@ Juan Diego Mantilla, Sreedevi Puthiyamadam Vasu, Robert R. Ford, Suyue Li, Alex 
 
 ### Data Analysis Methods
 
-The foundational content introduces the core tools used throughout the cookbook:
+Foundational notebooks cover core spectral and decomposition tools:
 
-- **Harmonic analysis** of the seasonal cycle on SST climatologies
-- **Harmonic regression** to compute anomalies by removing annual-cycle harmonics from daily OLR
-- **Fourier analysis** to decompose geophysical time series into their frequency components, identify dominant timescales of variability, and reconstruct signals through spectral filtering.
-- **The Gibbs phenomenon** as a primer on spectral leakage when approximating discontinuous signals
-- **2D and 3D EOF/PCA** workflows, including the choice between temporal (`XXᵀ`) and spatial (`XᵀX`) covariance matrices
-
-Together, these notebooks establish the preprocessing and decomposition methods needed for spectral analysis of atmospheric and oceanic data.
+- **Harmonic analysis** of seasonal cycles in time series.
+- **Harmonic regression** to remove annual-cycle harmonics from atmospheric fields.
+- **Fourier analysis** for decomposition, dominant timescales, and spectral filtering.
+- **The Gibbs phenomenon** and spectral leakage at discontinuities.
+- **2D/3D - EOF/PCA**, including temporal vs. spatial formulations.
 
 ### Data Analysis Applications
 
-Example workflows apply the methods to real geophysical datasets:
+Applied workflows on real atmospheric and oceanic datasets:
 
-- **Frequency decomposition of zonal winds** at 850 hPa using the FFT to partition tropical atmospheric variability into interannual, annual, semiannual, and intraseasonal bands.
-- **Time-extended EOF (EEOF) analysis** of tropical OLR anomalies to extract propagating patterns that standard EOF analysis often splits across mode pairs.
-- **Regression of atmospheric fields onto climate indices and principal component time series** to diagnose the spatial patterns associated with dominant modes of variability identified through EOF analysis. A key example is the regression of atmospheric fields onto the Real-time Multivariate MJO (RMM) indices, which reveals the large-scale circulation and convection patterns linked to different phases of the Madden–Julian Oscillation.
-- **Machine learning application** Comparison of neural networks trained using raw anomalies versus filtered intraseasonal (~20-100 days) anomalies to forecast 850-hPa zonal wind at subseasonal (~14 days) lead times for a specific location (Nairobi, Kenya). There are future plans to develop additional ML models for temperature and precipitation, and will compare predictive skill with RMM based models.
+- **Seasonal-cycle removal compared**: daily climatology vs. harmonic regression on 850-hPa zonal wind, with spectral checks for residual annual power.
+- **Zonal-wind frequency decomposition**: FFT partitioning of interannual, annual, semiannual, and intraseasonal variability.
+- **Extended EOF (EEOF) analysis** of tropical OLR to capture propagating modes missed by standard EOF pairs.
+- **Spectral analysis of tropical variability and the MJO**: Welch spectra, red-noise significance, 20–90-day bandpass filtering, and Hovmöller diagnostics on OLR and zonal wind.
+- **Multivariate EOFs** of OLR and zonal wind to extract a coupled MJO signal and build an RMM-like index.
+- **Regression onto climate indices and PCs**, including RMM-based MJO circulation and convection patterns.
+- **Machine learning**: Comparison of neural networks trained using raw anomalies versus filtered intraseasonal (~20-90 days) anomalies to forecast 850-hPa zonal wind at subseasonal (~14 days) lead times for a specific location (Nairobi, Kenya). Future plans include developing additional ML models for temperature and precipitation and comparing predictive skill with RMM-based models.
 
 ## Running the Notebooks
 

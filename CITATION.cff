@@ -1,5 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this cookbook, please cite it as below."
+title: "Spectral Analysis for Geophysical Data Cookbook"
+abstract: "A cookbook on spectral analysis methods for geophysical data."
 authors:
   # add additional entries for each author -- see https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
   - family-names: Mantilla
@@ -41,6 +43,9 @@ authors:
     orcid: https://orcid.org/0000-0002-3673-9793 # optional
     website: https://github.com/Arri2424
     affiliation: University of Georgia
-
-title: "Spectral Analysis for Geophysical Data Cookbook"
-abstract: "A cookbook on spectral analysis methods for geophysical data with hands-on experience reproducing the Real-time Multivariate MJO (RMM) index used to study the Madden–Julian Oscillation (MJO)."
+identifiers:
+  - type: doi
+    value: https://doi.org/10.5281/zenodo.21139295
+license: CC-BY-4.0
+license-url: https://creativecommons.org/licenses/by/4.0/
+repository: https://github.com/ProjectPythia/spectral-analysis-cookbook

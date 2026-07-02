@@ -5,9 +5,10 @@ extends:
 project:
   title: Spectral Analysis for Geophysical Data Cookbook
   github: https://projectpythia.org/spectral-analysis-cookbook/
+  doi: https://doi.org/10.5281/zenodo.21139295
   bibliography:
   - references.bib
-  abstract: "Spectral analysis methods for geophysical data in Python, with a focus on Fourier and harmonic analysis, spectral filtering, and Empirical Orthogonal Function (EOF) analysis."
+  abstract: "A cookbook on spectral analysis methods for geophysical data."
   authors:
     - name: Juan Diego Mantilla
       affiliation: UAlbany
