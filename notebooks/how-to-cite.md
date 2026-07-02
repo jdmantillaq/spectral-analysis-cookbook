@@ -4,4 +4,4 @@ The material in this Project Pythia Cookbook is licensed for free and open consu
 
 The source code for the book is [released on GitHub](https://github.com/ProjectPythia/spectral-analysis-cookbook) and archived on Zenodo. This DOI will always resolve to the latest release of the book source:
 
-[![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21139295.svg)](https://doi.org/10.5281/zenodo.21139294)
