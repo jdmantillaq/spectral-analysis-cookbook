@@ -1,6 +1,16 @@
-thumbnail: thumbnail.png
+thumbnail: thumbnails/spectral_analysis.png
 tags:
   domains:
-    - sampledomain
+    - climate
+    - atmosphere
+    - signal analysis
+    - spectral analysis
   packages:
-    - samplepackage
+    - numpy
+    - xarray
+    - pandas
+    - scipy
+    - matplotlib
+    - dask
+    - cartopy
+    - scikit-learn
