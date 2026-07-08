@@ -2,7 +2,7 @@ name: spectral-cookbook-dev
 channels:
   - conda-forge
 dependencies:
-  - python
+  - python<3.12
   # Jupyter / MyST
   - jupyterlab
   - mystmd
