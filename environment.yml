@@ -2,7 +2,7 @@ name: spectral-cookbook-dev
 channels:
   - conda-forge
 dependencies:
-  - python<3.12  # This pin is currently needed to work with tensorflow
+  - python < 3.12  # This pin is currently needed to work with tensorflow
   # Jupyter / MyST
   - jupyterlab
   - mystmd
@@ -14,7 +14,7 @@ dependencies:
   - numpy
   - scipy
   - pandas
-  - matplotlib-base
+  - matplotlib < 3.11  # Temporary pin because of a colorbar bug
   - seaborn
 
   # Geoscience / gridded data
