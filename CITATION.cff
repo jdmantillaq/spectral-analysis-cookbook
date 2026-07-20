@@ -6,21 +6,21 @@ authors:
   # add additional entries for each author -- see https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
   - family-names: Mantilla
     given-names: Juan Diego
-    orcid: https://orcid.org/0009-0009-9886-1928 # optional
-    website: https://github.com/jdmantillaq # optional
-    affiliation: University at Albany (State University of New York) # optional
+    orcid: https://orcid.org/0009-0009-9886-1928
+    website: https://github.com/jdmantillaq
+    affiliation: University at Albany (State University of New York)
 
   - family-names: Puthiyamadam Vasu
     given-names: Sreedevi
-    orcid: https://orcid.org/0000-0002-9142-3476 # optional
-    website: https://github.com/sputhiyamadam # optional
-    affiliation: Florida Institute of Technology, Melbourne, Florida # optional
+    orcid: https://orcid.org/0000-0002-9142-3476
+    website: https://github.com/sputhiyamadam
+    affiliation: Florida Institute of Technology, Melbourne, Florida
 
   - family-names: Ford
     given-names: Robert R.
-    orcid: https://orcid.org/0000-0001-5483-4965 # optional
-    website: r-ford.github.io # optional
-    affiliation: University at Albany (State University of New York) # optional
+    orcid: https://orcid.org/0000-0001-5483-4965
+    website: r-ford.github.io
+    affiliation: University at Albany (State University of New York)
     
   - family-names: Li
     given-names: Suyue
@@ -34,15 +34,23 @@ authors:
 
   - family-names: Tian
     given-names: Yiqun
-    orcid: https://orcid.org/0000-0002-7766-5137 # optional
-    website: https://github.com/tianyiqun997 # optional
-    affiliation: Duke University # optional
+    orcid: https://orcid.org/0000-0002-7766-5137
+    website: https://github.com/tianyiqun997
+    affiliation: Duke University
     
   - family-names: Oliazadeh
     given-names: Arman
-    orcid: https://orcid.org/0000-0002-3673-9793 # optional
+    orcid: https://orcid.org/0000-0002-3673-9793
     website: https://github.com/Arri2424
     affiliation: University of Georgia
+
+  - family-names: Rose
+    given-names: Brian E. J.
+    affiliation: University at Albany (SUNY)
+    orcid: 0000-0002-9961-3821
+    email: brose@albany.edu
+    website: https://brian-rose.github.io
+
 identifiers:
   - type: doi
     value: https://doi.org/10.5281/zenodo.21139295
