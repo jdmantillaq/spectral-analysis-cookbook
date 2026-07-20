@@ -36,7 +36,8 @@ project:
     - name: Arman Oliazadeh
       affiliation: University of Georgia
       orcid: 0000-0002-3673-9793
-      github: Arri2424  
+      github: Arri2424
+    - brian-rose
   copyright: '2026'
   toc:
     - file: README.md
